@@ -28,7 +28,7 @@ export default function ParallaxSection({ children, className = '', speed = 0.5 
 
     tl.fromTo(contentRef.current, { y: `${-speed * 100}px` }, { y: `${speed * 100}px` }, 0)
 
-    return () => tl.kill()
+    return () => { tl.kill() }
   }, [speed])
 
   return (

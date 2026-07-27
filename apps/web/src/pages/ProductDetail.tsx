@@ -5,11 +5,10 @@ import api from '@/lib/api'
 import { useCartStore } from '@/store/cartStore'
 import Product3DViewer from '@/components/product/Product3DViewer'
 import ImageHoverSlider from '@/components/ui/ImageHoverSlider'
-import ScrollReveal from '@/components/ui/ScrollReveal'
 
 interface Product {
   id: string; name: string; slug: string; description: string; brand: string | null
-  basePrice: number; images: string[]; rating: number; reviewCount: number
+  basePrice: number; images: string[]; rating: number; reviewCount: number; tags: string[]
   category: { id: string; name: string }
   variants: { id: string; name: string; price: number; stock: number; attributes: Record<string, string> }[]
   reviews: { id: string; rating: number; title: string; body: string; user: { name: string }; createdAt: string }[]
