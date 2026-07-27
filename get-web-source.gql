@@ -1,8 +1,0 @@
-query {
-  serviceInstance(environmentId: "c0c46f85-22c8-4f67-8ed6-79e1a2d70c54", serviceId: "80ece875-eadd-4ba6-bab5-79cf7ba7c4ca") {
-    source {
-      repo
-      image
-    }
-  }
-}
