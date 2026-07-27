@@ -1,0 +1,14 @@
+mutation CreateWebService {
+  serviceCreate(
+    input: {
+      projectId: "2a5b34a4-6ab5-4e51-b74a-5aa56e42ea0a"
+      name: "web"
+      source: {
+        repo: "rahman-2503/E-commerce"
+      }
+    }
+  ) {
+    id
+    name
+  }
+}

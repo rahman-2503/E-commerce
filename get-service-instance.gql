@@ -1,0 +1,6 @@
+query {
+  service(id: "fe36624a-15a4-4f72-ad51-251bfdc222b7") {
+    id
+    name
+  }
+}
