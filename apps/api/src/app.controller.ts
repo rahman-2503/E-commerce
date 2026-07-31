@@ -15,9 +15,3 @@ export class AppController {
     return { status: 'ok' };
   }
 }
-
-  @Get('health')
-  getHealth(): { status: string } {
-    return { status: 'ok' };
-  }
-}
